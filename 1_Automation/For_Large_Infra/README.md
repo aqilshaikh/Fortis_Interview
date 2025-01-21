@@ -79,7 +79,7 @@ To run the script, you need the following:
 1. **Run the Script**  
    Execute the Python script in your terminal:
    ```bash
-   python3 ec2_ami_info.py
+   python3 Ami_details_Python.py
    ```
 
 2. **View the Output**  
