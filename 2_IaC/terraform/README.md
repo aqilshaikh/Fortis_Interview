@@ -87,7 +87,7 @@ terraform-project/
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/aqilshaikh/Fortis_Interview/tree/main/2_IaC/terraform
    cd terraform-project/
    ```
 
@@ -193,6 +193,4 @@ Confirm the action when prompted. This will remove all resources created by Terr
 ---
 
 ## Contact
-For any issues or questions, please reach out via email or the provided communication channel.
-
-Happy Terraforming!
+For any issues or questions, please reach out via email : aqilshaikh94@gmail.com
