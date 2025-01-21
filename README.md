@@ -2,7 +2,8 @@
 
 ## Overview
 This repository contains  automation and infrastructure as code (IaC) projects. It is organized into multiple directories, each focusing on different aspects of automation and infrastructure setup.
-
+Solution to Question 1 of the Prompt is stored under directory 1_Automation
+Solution to Question 2 of the Prompt is stored under directory 2_IaC
 ## Directory Structure
 
 ### 1_Automation
