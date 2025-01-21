@@ -6,18 +6,23 @@ Solution to Question 1 of the Prompt is stored under directory 1_Automation
 Solution to Question 2 of the Prompt is stored under directory 2_IaC
 ## Directory Structure
 
+```mermaid
 graph TD
+
     A[Python Script] --> B[Fetch EC2 Instances]
     A --> C[Group by AMI IDs]
     D[Bash Script] --> E[Use AWS CLI]
     D --> F[Format with jq]
 
+```
+```mermaid
 graph TD
+
     A[Initialize Terraform] --> B[Validate Configuration]
     B --> C[Plan Infrastructure]
     C --> D[Apply Configuration]
     D --> E[Provision Resources]
-
+```
 ### 1_Automation
 - **For_Large_Infra**: Contains a Python script for gathering information about all EC2 instances in an AWS account, grouped by the AMI IDs they are using. This script is efficient, concise, and secure, offering a practical solution for AWS administrators and engineers who need to audit or manage EC2 resources effectively. [More details](1_Automation/For_Large_Infra/README.md)
     - **Why Python?**: Python was chosen for its readability and extensive libraries. The `boto3` library is used to interact with AWS services, making it easy to retrieve and manipulate AWS resources.
