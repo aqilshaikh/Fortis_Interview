@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from botocore.exceptions import ClientError
 
 
-# Define a function to provide default values for AMI details
+#function to provide default values for AMI details
 def default_ami_info():
     return {
         "ImageDescription": None,
@@ -78,7 +78,7 @@ def get_ec2_instances_by_ami():
     ami_info = fetch_ec2_instances(ec2_client)
 
     # Step 2: Concurrently fetch AMI details
-    with ThreadPoolExecutor() as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_ami_id = {
             executor.submit(fetch_ami_details, ec2_client, ami_id): ami_id
             for ami_id in ami_info.keys()
