@@ -1,4 +1,4 @@
-# Fortis_Interview
+
 
 ## Overview
 This repository contains  automation and infrastructure as code (IaC) projects. It is organized into multiple directories, each focusing on different aspects of automation and infrastructure setup.
