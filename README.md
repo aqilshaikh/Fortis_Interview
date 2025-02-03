@@ -2,10 +2,32 @@
 
 ## Overview
 This repository contains  automation and infrastructure as code (IaC) projects. It is organized into multiple directories, each focusing on different aspects of automation and infrastructure setup.
+Problem 1:
+Gather information about all of the instances in
+the current region. It should group them by the AMI’s that are in use, with information
+about the AMI's and how many EC2 Instances are using them. Format the output as a
+JSON object as below.
+● Assume that AWS Credentials are available in the environment.
+● If AMI’s are no longer available, null is an acceptable value for AMI
+specific items. Do not assume that all AMI’s are owned by t
+current account.
+● Assume the environment being queried is a large account with lots of
+instances and AMIs. Output results to stdout.
 
--Solution to Question 1 of the Prompt is stored under directory 1_Automation
+-Solution to Problem 1 of the Prompt is stored under directory 1_Automation
 
--Solution to Question 2 of the Prompt is stored under directory 2_IaC
+
+Problem 2:
+Using Infrastructure-as-Code tool of choice, e.g., Terraform, Cloudformation, etc. to
+provision the following set of resources in a given AWS account. Make sure you use
+best practices, Nested Stacks in Cloudformation, or Modules in Terraform. Note that
+in the given setup, incoming traffic on port 22 and port 443 goes to a Bastion ho
+and an ELB, respectively to be forwarded to the web app server. The outgoing traff
+from the web app server goes to a NAT to be sent to the Internet. Feel free to state
+any assumptions implemented against
+
+
+-Solution to Problem 2 of the Prompt is stored under directory 2_IaC
 ## Directory Structure
 
 ### 1_Automation
